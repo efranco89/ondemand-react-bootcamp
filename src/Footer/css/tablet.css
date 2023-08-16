@@ -1,0 +1,15 @@
+@media (min-width: 760px) {
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer__information {
+    width: 50%;
+  }
+
+  .footer__socialmedia {
+    width: 50%;
+  }
+
+}
