@@ -1,0 +1,11 @@
+@media (min-width: 1280px) {
+
+  .main__container {
+    width: 70%;
+  }
+
+  .product-cards {
+    min-width: 25%;
+  }
+  
+}

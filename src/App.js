@@ -1,5 +1,6 @@
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { MainContent } from './MainContent';
 import './App.css';
 // import { useFeaturedBanners } from './utils/hooks/useFeaturedBanners';
 
@@ -10,13 +11,15 @@ function App() {
   return (
     <>
       <Header/>
-      <main>
+      <MainContent/>
+      <Footer/>
+     
+      {/* <main>
         This is the main <br/>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis orci et ante tincidunt pharetra. Suspendisse auctor ultricies ornare. Nam sit amet turpis id ante laoreet posuere. Maecenas accumsan mi sed tempus bibendum. Suspendisse in enim ac erat ornare tempor at a quam. Sed fringilla id lacus sed molestie. Sed nec auctor mi.
         </p>
-      </main>
-      <Footer/>
+      </main> */}
 
     </>
   );
