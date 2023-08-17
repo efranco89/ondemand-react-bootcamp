@@ -1,7 +1,15 @@
 import React from "react";
+
 import './css/style.css'
 import './css/tablet.css'
 import './css/desktop.css'
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { 
+  faFacebook, faInstagram, faXTwitter, faTiktok, faYoutube, faLinkedin 
+} from "@fortawesome/free-brands-svg-icons"
+
 
 const Footer = () => {
   return(
@@ -10,11 +18,24 @@ const Footer = () => {
         <p>Ecommerce created during Wizeline’s Academy React Bootcamp</p>
       </div>
       <div className="footer__socialmedia">
-        <div className="footer_socialmedia-icon">F</div>
-        <div className="footer_socialmedia-icon">I</div>
-        <div className="footer_socialmedia-icon">T</div>
-        <div className="footer_socialmedia-icon">Y</div>
-        <div className="footer_socialmedia-icon">L</div>
+        <div className="footer__socialmedia-icon">
+          <FontAwesomeIcon icon={faXTwitter} />
+        </div>
+        <div className="footer__socialmedia-icon" >
+          <FontAwesomeIcon icon={faFacebook} />
+        </div>
+        <div className="footer__socialmedia-icon">
+          <FontAwesomeIcon icon={faInstagram} />
+        </div>
+        <div className="footer__socialmedia-icon">
+          <FontAwesomeIcon icon={faTiktok} />
+        </div>
+        <div className="footer__socialmedia-icon">
+          <FontAwesomeIcon icon={faYoutube} />
+        </div>
+        <div className="footer__socialmedia-icon">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </div>
       </div>
     </footer>
   )

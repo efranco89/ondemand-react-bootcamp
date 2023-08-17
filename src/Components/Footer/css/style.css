@@ -1,6 +1,6 @@
 .footer {
   bottom: 0;
-  background-color: aqua;
+  background-color: var(--ligther-gray);
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -8,17 +8,30 @@
   width: 100%;
 }
 
-
 .footer__information {
-  background-color: brown;
-  padding: 2px;
+  padding: 10px;
+  border-bottom: 1px solid var(--medium-gray);
   width: 100%;
+}
+
+.footer__information > p {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .footer__socialmedia {
   align-items: center;
-  background-color: chocolate;
   display: flex;
   justify-content: space-evenly;
+  padding: 10px;
   width: 100%;
+}
+
+.footer__socialmedia-icon {
+  color: var(--darker-gray);
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 30px;
 }

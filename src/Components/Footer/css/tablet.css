@@ -12,4 +12,8 @@
     width: 50%;
   }
 
+  .footer__information > p {
+    font-size: 1.3rem;
+  }
+
 }
