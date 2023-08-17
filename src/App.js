@@ -1,6 +1,6 @@
-import { Header } from './Header';
-import { Footer } from './Footer';
-import { MainContent } from './MainContent';
+import { Header } from './Components/Header';
+import { Footer } from './Components/Footer';
+import { MainContent } from './Components/MainContent';
 import './App.css';
 // import { useFeaturedBanners } from './utils/hooks/useFeaturedBanners';
 
