@@ -1,5 +1,42 @@
 @media (min-width: 760px) {
-  .header {
-    background-color: blue;
+  /* Logo */
+  .header__logo {
+    width: 15%;
   }
+  
+  /* Search Input */
+  .header__search {
+    width: 70%;
+  }
+
+  .header__search-container { 
+    height: 80%;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .header__search-input {
+    width: 95%;
+  }
+
+  .header__search-icon-container {
+    justify-content: end;
+    padding-right: 15px;
+  }
+  
+  .header__search-icon {
+    width: 20%;
+  }
+
+  /* Navbar */
+
+  .header__nav{
+    height: 100%;
+    width: 15%;
+  }
+
+  .header__nav-list {
+    justify-content: space-evenly;
+  }
+  
 }
