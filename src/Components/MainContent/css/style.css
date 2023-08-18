@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  /* background-color: blueviolet; */
+  background-color: var(--lighther-gray);
   height: 100vh;
   position: fixed;
   top: 50px;
@@ -9,82 +9,235 @@
 }
 
 .main__container {
-  background-color: teal;
   width: 100%;
 }
+
+/* banners */
 
 .banners {
-  background-color: greenyellow;
+  border: 1px solid var(--light-gray);
+  box-shadow: 3px 4px 5px 1px var(--darker-gray);
+  border-radius: 5px;
   height: 350px;
-  margin-bottom: 10px;
-  width: 100%;
+  margin: 10px auto;
+  width: 98%;
 }
 
-.banners-pictuare {
+.banners-figure {
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   height: 250px;
-  vertical-align: middle;
+}
+
+.banners-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
 }
 
 .banners-footer {
-  background-color: aqua;
+  border-top: 2px solid var(--medium-gray);
   height: 100px;
   padding: 2px;
   overflow-y: auto;
 }
 
-.products__container { 
-  box-sizing: border-box;
-  background-color: yellow;
+.banners-footer-title{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1px;
+  text-align: center;
+}
+
+.banners-footer-description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  padding: 5px;
+  text-align: justify;
+}
+
+
+/* categories */
+/* you should show at least the main image of the category, 
+its name, category, and price */
+.categories__container { 
+  border: 1px solid var(--light-gray);
+  box-shadow: 3px 4px 5px 1px var(--darker-gray);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 400px;
-  margin-bottom: 10px;
-  padding: 2px;
+  margin: 10px auto;
+  width: 98%;
+}
+
+.categories__container-title {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 40px;
+  padding: 10px;
+}
+
+.categories__container-cards {
+  box-sizing: border-box;
+  display: flex;
+  height: 360px;
+  padding: 5px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.category-cards {
+  box-sizing: border-box;
+  border: 1px solid var(--darker-gray);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  margin: 0px 3px 0px 3px;
+  width: 98%;
+}
+
+.category-cards-body {
+  align-items: center;
+  display: flex;
+  height: 85%;
+  justify-content: center;
+}
+
+.category-cards-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.category-cards-footer {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  height: 15%;
+  justify-content: center;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.category {
+  align-items: center;
+  background-color: var(--medium-gray);
+  border: 1px solid var(--darker-gray);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: start;
+  margin: 0px 5px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.category-example {
+  background-color: rgba(57, 29, 245, 0.50);;
+  border: 1px solid var(--market-blue);
+}
+
+/* products */
+/* you should show at least the main image of the product, 
+its name, category, and price */
+.products__container { 
+  border: 1px solid var(--light-gray);
+  box-shadow: 3px 4px 5px 1px var(--darker-gray);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 10px auto;
+  width: 98%;
 }
 
 .products__container-title {
-  background-color: aqua;
-  height: 30px;
-  padding: 5px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 3px;
+  padding: 10px;
 }
 
 .products__container-cards {
-  background-color: red;
+  box-sizing: border-box;
   display: flex;
-  height: 370px;
+  height: 400px;
+  padding: 5px;
   width: 100%;
   overflow-x: auto;
 }
 
 .product-cards {
-  background-color: burlywood;
+  border: 1px solid var(--darker-gray);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
   height: 100%;
-  margin: 2px;
-  padding: 3px;
-  min-width: 100%;
+  margin: 0px 3px 0px 3px;
+  width: 98%;
 }
 
 .product-cards-body {
   align-items: center;
-  background-color: cadetblue;
   display: flex;
-  height: 70%;
+  height: 50%;
   justify-content: center;
 }
 
 .product-cards-image {
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
   object-fit: contain;
-  padding: 2px;
-  width: 100%;
 }
 
 .product-cards-footer {
-  background-color: deepskyblue;
-  height: 30%;
-  padding: 2px;
+  height: 50%;
   overflow-y: auto;
+}
+
+.product-cards-footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.product-cards-footer-description {
+  color: var(--darker-gray);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 10px;
+}
+
+.product-cards-footer-categories {
+  display: flex;
+  padding: 5px;
+}
+
+.product-cards-footer-price {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px 10px 0px;
+}
+
+.footer-price {
+  font-size: 2rem;
+  font-weight: bolder;
 }

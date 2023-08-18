@@ -4,9 +4,21 @@
     width: 80%;
   }
 
-  .product-cards {
-    min-width: 50%;
+  .banners-footer {
+    border-top: none;
+    padding: 5px;
   }
 
-  
+  .banners-footer-title{
+    margin-top: 5px;
+  }
+
+  .category-cards {
+    width: 60%;
+  }
+
+  .product-cards {
+    width: 60%;
+  }
+
 }

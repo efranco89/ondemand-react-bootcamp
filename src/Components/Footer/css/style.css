@@ -1,6 +1,6 @@
 .footer {
   bottom: 0;
-  background-color: var(--ligther-gray);
+  background-color: var(--lighther-gray);
   display: flex;
   flex-direction: column;
   position: fixed;

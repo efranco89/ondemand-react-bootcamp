@@ -3,14 +3,14 @@
   padding: 0;
   margin: 0;
   /* The selected grays */
-  --ligther-gray: #F2F2F2;
+  --lighther-gray: #F2F2F2;
   --light-gray: #D9D9D9;
   --medium-gray: #BFBFBF;
   --dark-gray: #A6A6A6;
   --darker-gray: #8C8C8C;
   /* The official colors of the market */
   --market-purple: #B900EA;
-  --market-blue: #391DF5;
+  --market-blue: rgb(57, 29, 245);
   --market-green: #04DE3E;
   --market-orange: #FF6D00;
   --market-lavender: #DAE0EE;

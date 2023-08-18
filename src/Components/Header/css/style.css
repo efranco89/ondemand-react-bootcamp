@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  background-color: var(--ligther-gray);
+  background-color: var(--lighther-gray);
   border-bottom: solid 1px rgb(166,166,166);
   display: flex;
   height: 50px;
@@ -51,7 +51,7 @@
 }
 
 .header__search-input {
-  background-color: var(--ligther-gray);
+  background-color: var(--lighther-gray);
   border: none;
   font-size: 1.8rem;
   height: 85%;

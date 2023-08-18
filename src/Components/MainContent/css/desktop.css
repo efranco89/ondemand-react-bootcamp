@@ -4,8 +4,12 @@
     width: 70%;
   }
 
+  .category-cards {
+    width: 30%;
+  }
+
   .product-cards {
-    min-width: 25%;
+    width: 30%;
   }
   
 }

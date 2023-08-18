@@ -3,126 +3,120 @@ import './css/style.css'
 import './css/tablet.css'
 import './css/desktop.css'
 
+
 const MainContent = () => {
 
   return(
     <main className="main">    
       <section className="main__container">
+        
         <section className="banners">
-          <figure >
+          <figure className="banners-figure">
+
             <img
               src="https://images.prismic.io/wizeline-academy/edaf28da-2e46-4f75-8a69-a972119f40ed_banner-3-2.jpeg?auto=compress,format&rect=0,0,1429,700&w=1440&h=705"
               alt="car"
-              className="banners-pictuare"
+              className="banners-img"
             />
           </figure>
           <div className="banners-footer">
-            <p>Title </p>
-            <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            <p className="banners-footer-title">Title </p>
+            <p className="banners-footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
 
           </div>
         </section>
 
-        <section className="products__container">
-          <div className="products__container-title">
-            <p>Title</p>
+        <section className="categories__container">
+          <div className="categories__container-title">
+            <p>Categories</p>
           </div>
-          <div className="products__container-cards">
-            <div className="product-cards">
-              <div className="product-cards-body">
+
+          <div className="categories__container-cards">
+
+            <div className="category-cards">
+              <div className="category-cards-body">
                 <img
                   src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="car"
-                  className="product-cards-image"
+                  className="category-cards-image"
                 />
               </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
               </div>
-            </div>
+            </div> 
 
-            <div className="product-cards">
-              <div className="product-cards-body">
+            <div className="category-cards">
+              <div className="category-cards-body">
                 <img
                   src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="car"
-                  className="product-cards-image"
+                  className="category-cards-image"
                 />
               </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
               </div>
-            </div>
+            </div>  
 
-            <div className="product-cards">
-              <div className="product-cards-body">
+            <div className="category-cards">
+              <div className="category-cards-body">
                 <img
                   src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="car"
-                  className="product-cards-image"
+                  className="category-cards-image"
                 />
               </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
               </div>
-            </div>
+            </div>  
 
-            <div className="product-cards">
-              <div className="product-cards-body">
+            <div className="category-cards">
+              <div className="category-cards-body">
                 <img
                   src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="car"
-                  className="product-cards-image"
+                  className="category-cards-image"
                 />
               </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
               </div>
-            </div>
+            </div>  
 
-            <div className="product-cards">
-              <div className="product-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="product-cards-image"
-                />
-              </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
-              </div>
-            </div>
-
-            <div className="product-cards">
-              <div className="product-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="product-cards-image"
-                />
-              </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
-              </div>
-            </div>
-
-     
           </div>
         </section>
 
         <section className="products__container">
           <div className="products__container-title">
-            <p>Title</p>
+            <p>Featured Products</p>
           </div>
+
           <div className="products__container-cards">
+
             <div className="product-cards">
               <div className="product-cards-body">
                 <img
@@ -132,8 +126,28 @@ const MainContent = () => {
                 />
               </div>
               <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+                <div>
+                  <p className="product-cards-footer-title">Name</p>
+                  <p className="product-cards-footer-description">
+                    Short description Lorem ipsum dolor sit amet. Proin egestas faucibus nisl, ut dignissim sapien mollis eu. Praesent convallis feugiat diam eget commodo. 
+                  </p>
+                </div>
+                <div className="product-cards-footer-categories">
+                  <div className="category">
+                    Tag
+                  </div>
+                  <div className="category category-example">
+                    Tag
+                  </div>  
+                </div>
+                <div className="product-cards-footer-price">
+                  <div className="category category-example">
+                    Category
+                  </div>              
+                  <div className="footer-price">
+                    $ 2000 USD
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -146,10 +160,31 @@ const MainContent = () => {
                 />
               </div>
               <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+                <div>
+                  <p className="product-cards-footer-title">Name</p>
+                  <p className="product-cards-footer-description">
+                    Short description Lorem ipsum dolor sit amet. Proin egestas faucibus nisl, ut dignissim sapien mollis eu. Praesent convallis feugiat diam eget commodo. 
+                  </p>
+                </div>
+                <div className="product-cards-footer-categories">
+                  <div className="category">
+                    Tag
+                  </div>
+                  <div className="category category-example">
+                    Tag
+                  </div>  
+                </div>
+                <div className="product-cards-footer-price">
+                  <div className="category category-example">
+                    Category
+                  </div>              
+                  <div className="footer-price">
+                    $ 2000 USD
+                  </div>
+                </div>
               </div>
             </div>
+
 
             <div className="product-cards">
               <div className="product-cards-body">
@@ -160,10 +195,33 @@ const MainContent = () => {
                 />
               </div>
               <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+                <div>
+                  <p className="product-cards-footer-title">Name</p>
+                  <p className="product-cards-footer-description">
+                    Short description Lorem ipsum dolor sit amet. Proin egestas faucibus nisl, ut dignissim sapien mollis eu. Praesent convallis feugiat diam eget commodo. 
+                  </p>
+                </div>
+                <div className="product-cards-footer-categories">
+                  <div className="category">
+                    Tag
+                  </div>
+                  <div className="category category-example">
+                    Tag
+                  </div>  
+                </div>
+                <div className="product-cards-footer-price">
+                  <div className="category category-example">
+                    Category
+                  </div>              
+                  <div className="footer-price">
+                    $ 2000 USD
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
 
             <div className="product-cards">
               <div className="product-cards-body">
@@ -174,42 +232,177 @@ const MainContent = () => {
                 />
               </div>
               <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
+                <div>
+                  <p className="product-cards-footer-title">Name</p>
+                  <p className="product-cards-footer-description">
+                    Short description Lorem ipsum dolor sit amet. Proin egestas faucibus nisl, ut dignissim sapien mollis eu. Praesent convallis feugiat diam eget commodo. 
+                  </p>
+                </div>
+                <div className="product-cards-footer-categories">
+                  <div className="category">
+                    Tag
+                  </div>
+                  <div className="category category-example">
+                    Tag
+                  </div>  
+                </div>
+                <div className="product-cards-footer-price">
+                  <div className="category category-example">
+                    Category
+                  </div>              
+                  <div className="footer-price">
+                    $ 2000 USD
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="product-cards">
-              <div className="product-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="product-cards-image"
-                />
-              </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
-              </div>
-            </div>
-
-            <div className="product-cards">
-              <div className="product-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="product-cards-image"
-                />
-              </div>
-              <div className="product-cards-footer">
-                <p>Title</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",</p>
-              </div>
-            </div>
-
-     
+         
           </div>
         </section>     
+
+
+
+
+
+
+
+
+
+
+        <section className="categories__container">
+          <div className="categories__container-title">
+            <p>Categories</p>
+          </div>
+          <div className="categories__container-cards">
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div> 
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+
+            <div className="category-cards">
+              <div className="category-cards-body">
+                <img
+                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="car"
+                  className="category-cards-image"
+                />
+              </div>
+              <div className="category-cards-footer">
+                <div className="category">
+                  Category
+                </div>
+                <div className="category category-example">
+                  Category
+                </div>                
+              </div>
+            </div>  
+
+          </div>
+        </section>
       </section>
     </main>
   )
