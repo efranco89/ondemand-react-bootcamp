@@ -8,9 +8,6 @@ function CategoryProvider({children}) {
   const [categories, setCategories] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
-  console.log(loading);
-  console.log(error);
-  console.log(categories);
 
   React.useEffect(() => {
 

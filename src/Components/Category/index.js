@@ -15,9 +15,6 @@ const Category = () => {
     categories 
   } = React.useContext(CategoryContext);
 
-  console.log(categories);
-
-
   return(
     <section className="categories__container">
       <div className="categories__container-title">
