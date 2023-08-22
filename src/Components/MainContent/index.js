@@ -3,6 +3,8 @@ import { Category } from "../Category";
 import { CategoryProvider } from "../../Contexts/CategoryContext";
 import { Product } from "../Product";
 import { ProductProvider } from "../../Contexts/ProductsContext";
+import { Banner } from "../Banner";
+import { BannerProvider } from "../../Contexts/BannerContext";
 
 import './css/style.css'
 import './css/tablet.css'
@@ -13,8 +15,10 @@ const MainContent = () => {
   return(
     <main className="main">    
       <section className="main__container">
-        
-        <section className="banners">
+        <BannerProvider>
+          <Banner />
+        </BannerProvider>
+        {/* <section className="banners">
           <figure className="banners-figure">
 
             <img
@@ -31,7 +35,7 @@ const MainContent = () => {
 
               
           </div>
-        </section>
+        </section> */}
 
         <CategoryProvider>
           <Category />
