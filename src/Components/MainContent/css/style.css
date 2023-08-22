@@ -62,88 +62,10 @@
 /* categories */
 /* you should show at least the main image of the category, 
 its name, category, and price */
-.categories__container { 
-  border: 1px solid var(--light-gray);
-  box-shadow: 3px 4px 5px 1px var(--darker-gray);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  margin: 10px auto;
-  width: 98%;
-}
+/* 
 
-.categories__container-title {
-  box-sizing: border-box;
-  font-weight: bold;
-  font-size: 2rem;
-  height: 40px;
-  padding: 10px;
-}
 
-.categories__container-cards {
-  box-sizing: border-box;
-  display: flex;
-  height: 360px;
-  padding: 5px;
-  width: 100%;
-  overflow-x: auto;
-}
 
-.category-cards {
-  box-sizing: border-box;
-  border: 1px solid var(--darker-gray);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: 100%;
-  margin: 0px 3px 0px 3px;
-  width: 98%;
-}
-
-.category-cards-body {
-  align-items: center;
-  display: flex;
-  height: 85%;
-  justify-content: center;
-}
-
-.category-cards-image {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.category-cards-footer {
-  box-sizing: border-box;
-  align-items: center;
-  display: flex;
-  height: 15%;
-  justify-content: center;
-  padding: 5px;
-  overflow-y: auto;
-}
-
-.category {
-  align-items: center;
-  background-color: var(--medium-gray);
-  border: 1px solid var(--darker-gray);
-  border-radius: 20px;
-  color: white;
-  display: flex;
-  font-size: 1.5rem;
-  justify-content: start;
-  margin: 0px 5px;
-  padding: 5px 15px;
-  text-align: center;
-}
-
-.category-example {
-  background-color: rgba(57, 29, 245, 0.50);;
-  border: 1px solid var(--market-blue);
-}
 
 /* products */
 /* you should show at least the main image of the product, 

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Category } from "../Category";
+import { CategoryProvider } from "../../Contexts/CategoryContext";
+
 import './css/style.css'
 import './css/tablet.css'
 import './css/desktop.css'
+
 
 
 const MainContent = () => {
@@ -28,87 +32,9 @@ const MainContent = () => {
           </div>
         </section>
 
-        <section className="categories__container">
-          <div className="categories__container-title">
-            <p>Categories</p>
-          </div>
-
-          <div className="categories__container-cards">
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div> 
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-          </div>
-        </section>
+        <CategoryProvider>
+          <Category />
+        </CategoryProvider>
 
         <section className="products__container">
           <div className="products__container-title">
@@ -266,143 +192,6 @@ const MainContent = () => {
 
 
 
-
-
-
-
-        <section className="categories__container">
-          <div className="categories__container-title">
-            <p>Categories</p>
-          </div>
-          <div className="categories__container-cards">
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div> 
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-            <div className="category-cards">
-              <div className="category-cards-body">
-                <img
-                  src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="car"
-                  className="category-cards-image"
-                />
-              </div>
-              <div className="category-cards-footer">
-                <div className="category">
-                  Category
-                </div>
-                <div className="category category-example">
-                  Category
-                </div>                
-              </div>
-            </div>  
-
-          </div>
-        </section>
       </section>
     </main>
   )
