@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProductCard = (props) => {
   const renderFunc = props.children || props.render;
   return (

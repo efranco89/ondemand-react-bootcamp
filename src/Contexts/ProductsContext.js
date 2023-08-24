@@ -1,5 +1,5 @@
 import React from 'react';
-import featured_products from '../mocks/en-us/featured-products.json';
+import featuredProducts from '../mocks/en-us/featured-products.json';
 
 const ProductContext = React.createContext();
 
@@ -10,7 +10,7 @@ function ProductProvider({ children }) {
 
   React.useEffect(() => {
     setTimeout(() => {
-      const response = featured_products?.['results'];
+      const response = featuredProducts?.results;
       if (response) {
         setError(false);
         setProducts(response);

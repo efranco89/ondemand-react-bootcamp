@@ -1,5 +1,5 @@
 import React from 'react';
-import featured_banners from '../mocks/en-us/featured-banners.json';
+import featuredBanners from '../mocks/en-us/featured-banners.json';
 
 const BannerContext = React.createContext();
 
@@ -10,7 +10,7 @@ function BannerProvider({ children }) {
 
   React.useEffect(() => {
     setTimeout(() => {
-      const response = featured_banners?.['results'];
+      const response = featuredBanners?.results;
       if (response) {
         setError(false);
         setBanners(response);

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function CategoryCardItem({ url, alt, slugs }) {
   return (
     <div className='category-cards'>

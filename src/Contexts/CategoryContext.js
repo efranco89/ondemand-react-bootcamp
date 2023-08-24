@@ -1,5 +1,5 @@
 import React from 'react';
-import product_categories from '../mocks/en-us/product-categories.json';
+import productCategories from '../mocks/en-us/product-categories.json';
 
 const CategoryContext = React.createContext();
 
@@ -10,7 +10,7 @@ function CategoryProvider({ children }) {
 
   React.useEffect(() => {
     setTimeout(() => {
-      const response = product_categories?.['results'];
+      const response = productCategories?.results;
 
       if (response) {
         setError(false);

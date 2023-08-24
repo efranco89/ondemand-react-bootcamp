@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProductCardItem = ({ src, alt, shortDescription, tags, category, price, name }) => {
   return (
     <div className='product-cards'>

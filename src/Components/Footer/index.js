@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './css/style.css';
 import './css/tablet.css';
 import './css/desktop.css';

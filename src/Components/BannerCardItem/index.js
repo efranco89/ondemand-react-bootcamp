@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BannerCardItem = ({ src, alt, title, description }) => {
   return (
     <div className='banner-card'>

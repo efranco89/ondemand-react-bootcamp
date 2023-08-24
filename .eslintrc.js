@@ -3,7 +3,17 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["standard", "plugin:react/recommended", "eslint-config-prettier"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  extends: [
+    "standard",
+    "plugin:react/recommended",
+    "eslint-config-prettier",
+    "plugin:react/jsx-runtime",
+  ],
   overrides: [
     {
       env: {
@@ -20,5 +30,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: {},
+  rules: {
+    "react/prop-types": 0,
+  },
 };

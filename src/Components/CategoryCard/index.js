@@ -1,5 +1,3 @@
-import React from 'react';
-
 function CategoryCard(props) {
   const renderFunc = props.children || props.render;
   return (

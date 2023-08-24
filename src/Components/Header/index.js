@@ -1,20 +1,12 @@
-import React from 'react';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
-import { ShoppingCartIcon } from '@heroicons/react/24/solid';
-
+import { MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/react/24/solid';
 import './css/style.css';
 import './css/tablet.css';
 import './css/desktop.css';
 
-import logo from './img/logo.png';
-
 const Header = () => {
   return (
     <header className='header'>
-      <div className='header__logo'>
-        {/* <img src={logo}></img> */}
-        LOGO
-      </div>
+      <div className='header__logo'>LOGO</div>
 
       <div className='header__search'>
         <div className='header__search-container'>
@@ -35,8 +27,6 @@ const Header = () => {
               className='nav-account-img'
               src={'https://lh3.googleusercontent.com/ogw/AGvuzYbYN3iKpi6pZVDNSBfh3ysqX6LNAIuovaKmAupW6Q=s32-c-mo'}
             ></img>
-            {/* <div className="nav-account-container">
-            </div> */}
           </li>
         </ul>
       </nav>
