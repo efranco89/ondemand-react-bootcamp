@@ -1,0 +1,49 @@
+.banners {
+  border: 1px solid var(--light-gray);
+  box-shadow: 3px 4px 5px 1px var(--darker-gray);
+  border-radius: 5px;
+  height: 300px;
+  margin: 10px auto;
+  width: 98%;
+}
+
+.banner-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-img {
+  max-width: 100%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.banner-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner-footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.banner-footer-description {
+  font-size: 1.3rem;
+  padding: 10px;
+}

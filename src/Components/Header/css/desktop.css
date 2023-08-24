@@ -1,0 +1,36 @@
+@media (min-width: 1280px) {
+  /* logo */
+  .header__logo {
+    width: 10%;
+  }
+
+  /* Search input */
+  .header__search {
+    width: 80%;
+  }
+
+  .header__search-container {
+    padding-left: 10px;
+  }
+
+  .header__search-icon-container {
+    width: 6%;
+  }
+
+  .header__search-icon {
+    width: 50%;
+  }
+
+  /* Navbar */
+
+  .header__nav {
+    height: 100%;
+    width: 10%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header__search-icon {
+    width: 30%;
+  }
+}

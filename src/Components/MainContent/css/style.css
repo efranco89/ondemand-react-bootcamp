@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  background-color: var(--lighther-gray);
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  top: 50px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.main__container {
+  width: 100%;
+}
+
+.while-fix {
+  height: 300px;
+}

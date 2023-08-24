@@ -1,0 +1,13 @@
+@media (min-width: 1280px) {
+  .footer {
+    justify-content: center;
+  }
+
+  .footer__information {
+    width: 40%;
+  }
+
+  .footer__socialmedia {
+    width: 40%;
+  }
+}

@@ -1,0 +1,19 @@
+@media (min-width: 760px) {
+  .main__container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .banners-footer {
+    border-top: none;
+    padding: 5px;
+  }
+
+  .banners-footer-title {
+    margin-top: 5px;
+  }
+
+  .product-cards {
+    width: 60%;
+  }
+}
