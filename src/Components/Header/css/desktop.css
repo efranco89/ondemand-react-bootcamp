@@ -9,7 +9,7 @@
     width: 80%;
   }
 
-  .header__search-container { 
+  .header__search-container {
     padding-left: 10px;
   }
 
@@ -23,16 +23,14 @@
 
   /* Navbar */
 
-  .header__nav{
+  .header__nav {
     height: 100%;
     width: 10%;
   }
-
 }
 
 @media (min-width: 1800px) {
   .header__search-icon {
     width: 30%;
   }
-
 }

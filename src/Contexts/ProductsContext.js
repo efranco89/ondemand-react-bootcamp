@@ -1,35 +1,37 @@
-import React from "react";
-import featured_products from '../mocks/en-us/featured-products.json'
+import React from 'react';
+import featured_products from '../mocks/en-us/featured-products.json';
 
 const ProductContext = React.createContext();
 
-function ProductProvider({children}) {
+function ProductProvider({ children }) {
   const [products, setProducts] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
 
   React.useEffect(() => {
     setTimeout(() => {
-      const response = featured_products?.["results"]
-      if(response) {
-        setError(false)
-        setProducts(response)
+      const response = featured_products?.['results'];
+      if (response) {
+        setError(false);
+        setProducts(response);
       } else {
-        setError(true)
+        setError(true);
       }
-      setLoading(false)
-    }, 5000)
-  }, [])
+      setLoading(false);
+    }, 5000);
+  }, []);
 
-  return( 
-    <ProductContext.Provider value={{
-      loading,
-      error,
-      products
-    }}>
+  return (
+    <ProductContext.Provider
+      value={{
+        loading,
+        error,
+        products,
+      }}
+    >
       {children}
     </ProductContext.Provider>
-  )
+  );
 }
 
-export { ProductContext, ProductProvider}
+export { ProductContext, ProductProvider };

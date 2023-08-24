@@ -1,4 +1,4 @@
-.products__container { 
+.products__container {
   border: 1px solid var(--light-gray);
   box-shadow: 3px 4px 5px 1px var(--darker-gray);
   border-radius: 5px;

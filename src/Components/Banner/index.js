@@ -1,29 +1,23 @@
-import React from "react";
-import { BannerContext } from "../../Contexts/BannerContext";
-import { BannerCard } from "../BannerCard";
-import { Error } from "../Error";
-import { Loading } from "../Loading";
-import { BannerCardItem } from "../BannerCardItem";
+import React from 'react';
+import { BannerContext } from '../../Contexts/BannerContext';
+import { BannerCard } from '../BannerCard';
+import { Error } from '../Error';
+import { Loading } from '../Loading';
+import { BannerCardItem } from '../BannerCardItem';
 
-import './css/style.css'
+import './css/style.css';
 
 const Banner = () => {
-
-  const {
-    loading,
-    error, 
-    banners
-  } = React.useContext(BannerContext)
-  return(
-    <section className="banners">
+  const { loading, error, banners } = React.useContext(BannerContext);
+  return (
+    <section className='banners'>
       <BannerCard
         error={error}
         loading={loading}
         banners={banners}
-
-        onError={() => <Error/>}
-        onLoading={() => <Loading/>}
-        render={ banner => (
+        onError={() => <Error />}
+        onLoading={() => <Loading />}
+        render={(banner) => (
           <BannerCardItem
             key={banner.id}
             src={banner.data.main_image.url}
@@ -32,11 +26,9 @@ const Banner = () => {
             description={banner.data.description?.[0].text}
           />
         )}
-      > 
-
-      </BannerCard>
+      ></BannerCard>
     </section>
-  )
-}
+  );
+};
 
-export {Banner}
+export { Banner };

@@ -1,4 +1,4 @@
-.categories__container { 
+.categories__container {
   border: 1px solid var(--light-gray);
   box-shadow: 3px 4px 5px 1px var(--darker-gray);
   border-radius: 5px;
@@ -77,6 +77,6 @@
 }
 
 .category-example {
-  background-color: rgba(57, 29, 245, 0.50);;
+  background-color: rgba(57, 29, 245, 0.5);
   border: 1px solid var(--market-blue);
 }

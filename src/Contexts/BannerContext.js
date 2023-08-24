@@ -1,35 +1,37 @@
-import React from "react";
-import featured_banners from '../mocks/en-us/featured-banners.json'
+import React from 'react';
+import featured_banners from '../mocks/en-us/featured-banners.json';
 
 const BannerContext = React.createContext();
 
-function BannerProvider({children}) {
+function BannerProvider({ children }) {
   const [banners, setBanners] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
 
   React.useEffect(() => {
     setTimeout(() => {
-      const response = featured_banners?.["results"]
+      const response = featured_banners?.['results'];
       if (response) {
-        setError(false)
-        setBanners(response)
+        setError(false);
+        setBanners(response);
       } else {
-        setError(true)
+        setError(true);
       }
-      setLoading(false)
-    }, 4000)
-  }, [])
+      setLoading(false);
+    }, 4000);
+  }, []);
 
-  return(
-    <BannerContext.Provider value={{
-      loading,
-      error,
-      banners
-    }}>
-      { children }
+  return (
+    <BannerContext.Provider
+      value={{
+        loading,
+        error,
+        banners,
+      }}
+    >
+      {children}
     </BannerContext.Provider>
-  )
+  );
 }
 
-export {BannerContext, BannerProvider}
+export { BannerContext, BannerProvider };

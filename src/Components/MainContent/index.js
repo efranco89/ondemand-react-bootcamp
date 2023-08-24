@@ -1,20 +1,19 @@
-import React from "react";
-import { Category } from "../Category";
-import { CategoryProvider } from "../../Contexts/CategoryContext";
-import { Product } from "../Product";
-import { ProductProvider } from "../../Contexts/ProductsContext";
-import { Banner } from "../Banner";
-import { BannerProvider } from "../../Contexts/BannerContext";
+import React from 'react';
+import { Category } from '../Category';
+import { CategoryProvider } from '../../Contexts/CategoryContext';
+import { Product } from '../Product';
+import { ProductProvider } from '../../Contexts/ProductsContext';
+import { Banner } from '../Banner';
+import { BannerProvider } from '../../Contexts/BannerContext';
 
-import './css/style.css'
-import './css/tablet.css'
-import './css/desktop.css'
+import './css/style.css';
+import './css/tablet.css';
+import './css/desktop.css';
 
 const MainContent = () => {
-  
-  return(
-    <main className="main">    
-      <section className="main__container">
+  return (
+    <main className='main'>
+      <section className='main__container'>
         <BannerProvider>
           <Banner />
         </BannerProvider>
@@ -44,11 +43,10 @@ const MainContent = () => {
         <ProductProvider>
           <Product />
         </ProductProvider>
-        <div className="while-fix"></div>
-
+        <div className='while-fix'></div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export { MainContent }
+export { MainContent };

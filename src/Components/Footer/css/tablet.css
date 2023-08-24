@@ -1,5 +1,4 @@
 @media (min-width: 760px) {
-
   .footer {
     flex-direction: row;
   }
@@ -15,5 +14,4 @@
   .footer__information > p {
     font-size: 1.3rem;
   }
-
 }

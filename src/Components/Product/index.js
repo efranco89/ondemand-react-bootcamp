@@ -1,35 +1,30 @@
-import React from "react";
-import { ProductContext } from "../../Contexts/ProductsContext";
-import { ProductCard } from "../ProductCard";
-import { ProductCardItem } from "../ProductCardItem";
-import { Error } from "../Error";
-import { Loading } from "../Loading";
+import React from 'react';
+import { ProductContext } from '../../Contexts/ProductsContext';
+import { ProductCard } from '../ProductCard';
+import { ProductCardItem } from '../ProductCardItem';
+import { Error } from '../Error';
+import { Loading } from '../Loading';
 
-import './css/style.css'
-import './css/tablet.css'
-import './css/desktop.css'
+import './css/style.css';
+import './css/tablet.css';
+import './css/desktop.css';
 
 const Product = () => {
+  const { loading, error, products } = React.useContext(ProductContext);
 
-  const { loading,
-    error,
-    products
-  } = React.useContext(ProductContext)
-
-  return(
-    <section className="products__container">
-      <div className="products__container-title">
+  return (
+    <section className='products__container'>
+      <div className='products__container-title'>
         <p>Featured Products</p>
       </div>
-      <ProductCard 
+      <ProductCard
         error={error}
         loading={loading}
         products={products}
-
         onError={() => <Error />}
         onLoading={() => <Loading />}
-        render={ product => (
-          <ProductCardItem 
+        render={(product) => (
+          <ProductCardItem
             key={product.id}
             alt={product.data.mainimage.alt}
             src={product.data.mainimage.url}
@@ -42,7 +37,7 @@ const Product = () => {
         )}
       />
     </section>
-  )
-}
+  );
+};
 
-export { Product }
+export { Product };
